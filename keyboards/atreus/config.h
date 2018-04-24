@@ -31,6 +31,15 @@
 #define MATRIX_ROWS 4
 #define MATRIX_COLS 11
 
+// Change this to how you wired your keyboard
+// COLS: Left to right, ROWS: Top to bottom
+#define MATRIX_ROW_PINS { D0, D1, D2, D3 }
+#define MATRIX_COL_PINS { F6, F5, F4, F1, F0, F7, B0, B1, B2, B3, B7 }
+#define UNUSED_PINS
+
+/* COL2ROW or ROW2COL */
+#define DIODE_DIRECTION COL2ROW
+
 /* define if matrix has ghost */
 //#define MATRIX_HAS_GHOST
 
@@ -62,3 +71,11 @@
 //#define NO_ACTION_ONESHOT
 //#define NO_ACTION_MACRO
 //#define NO_ACTION_FUNCTION
+
+#define PREVENT_STUCK_MODIFIERS
+#define IGNORE_MOD_TAP_INTERRUPT
+#define TAPPING_FORCE_HOLD
+
+#define USB_MAX_POWER_CONSUMPTION 50
+
+#endif
